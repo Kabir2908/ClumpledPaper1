@@ -15,7 +15,8 @@ class Paper{
         fill("purple")
       push();
        translate(pos.x,pos.y);
-       circle(0, 0, this.radius);
+       ellipseMode(RADIUS);
+       ellipse(0, 0, this.radius);
       pop();
       }
 }

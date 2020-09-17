@@ -21,7 +21,7 @@ function setup() {
 	/*ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);*/
 	 ground = new Ground(600,360,1200,20);
-	 paper = new Paper(200,100,50);
+	 paper = new Paper(200,100,25);
 box1 = new Dustbin(900,340,200,20);
 box2 = new Dustbin(800,300,20,100);
 box3 = new Dustbin(1000,300,20,100);
@@ -44,7 +44,7 @@ function draw() {
 }
 function keyPressed(){
 	if (keyCode=== UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:380,y:-200});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:100,y:-55});
 	}
 }
 
