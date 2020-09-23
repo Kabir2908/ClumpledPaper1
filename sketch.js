@@ -27,6 +27,7 @@ box2 = new Dustbin(800,300,20,100);
 box3 = new Dustbin(1000,300,20,100);
 
 	Engine.run(engine);
+	Engine.update(engine);
   
 }
 
